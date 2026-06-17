@@ -1,3 +1,7 @@
 a.active hr {
     display: block;
 }
+
+button{
+    cursor: pointer;
+}
