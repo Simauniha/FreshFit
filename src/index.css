@@ -1,10 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
 @import "tailwindcss";
 
 :root {
   --bg-main: #f8fafc;        /* light background */
-  --primary-dark: #264e52;   /* ocean */
-  --primary-light: #9bbfb3;  /* seamist */
+  --dark: #264e52;   /* ocean */
+  --light: #9bbfb3;  /* seamist */
   --accent-dark: #3b3f5c;    /* navy */
   --text-muted: #7a8b94;     /* bluestone */
   --soft-bg: #91a8b0;        /* bluebell */
+}
+
+*{
+    font-family: Outfit;
+}
+
+.prata-regular {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
 }

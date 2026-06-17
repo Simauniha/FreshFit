@@ -1,12 +1,12 @@
 import "./Home.css";
-
+import Hero from "../../components/Hero/Hero"
 import React from 'react'
 
 const Home = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+    <Hero/>
+    </>
   )
 }
 

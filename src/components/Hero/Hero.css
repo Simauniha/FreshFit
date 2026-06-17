@@ -1,0 +1,5 @@
+.hero-img{
+    background-color: var(--light);
+    object-fit: cover;
+    object-position: center;
+}

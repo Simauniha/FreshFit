@@ -11,7 +11,7 @@ const Navbar = () => {
     return (
         <>
             <div className="flex items-center justify-between py-5 font-medium">
-                <img src={Logo} className="w-36" alt="Logo" />
+                <img src={Logo} className="w-22 h-20" alt="Logo" />
                 <ul className="hidden sm:flex gap-5 text-lg text-gray-700">
                     <NavLink to="/" className="flex flex-col items-center gap-1">
                         <p>Home</p>
@@ -61,10 +61,10 @@ const Navbar = () => {
                             <button className='h-4 rotate-90'><IoIosArrowDown /></button>
                             <p>Back</p>
                         </div>
-                        <NavLink onClick={() => setVisible(false)} className="py-2 pl-6 border" to="/">Home</NavLink>
-                        <NavLink onClick={() => setVisible(false)} className="py-2 pl-6 border" to="/collection">Collection</NavLink>
-                        <NavLink onClick={() => setVisible(false)} className="py-2 pl-6 border" to="/about">About</NavLink>
-                        <NavLink onClick={() => setVisible(false)} className="py-2 pl-6 border" to="/contact">Contact</NavLink>
+                        <NavLink onClick={() => setVisible(false)} className="py-2 pl-6 border border-gray-400" to="/">Home</NavLink>
+                        <NavLink onClick={() => setVisible(false)} className="py-2 pl-6 border border-gray-400" to="/collection">Collection</NavLink>
+                        <NavLink onClick={() => setVisible(false)} className="py-2 pl-6 border border-gray-400" to="/about">About</NavLink>
+                        <NavLink onClick={() => setVisible(false)} className="py-2 pl-6 border border-gray-400" to="/contact">Contact</NavLink>
                     </div>
                 </div>
             </div>
