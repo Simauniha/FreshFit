@@ -5,3 +5,10 @@ a.active hr {
 button{
     cursor: pointer;
 }
+
+@media (max-width:640px) {
+    a.active{
+        background-color: var(--dark);
+        color: var(--light);
+    }
+}
