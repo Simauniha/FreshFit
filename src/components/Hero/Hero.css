@@ -1,5 +1,5 @@
 .hero-img{
-    background-color: var(--light);
+    background-color: var(--primary-600);
     object-fit: cover;
     object-position: center;
 }

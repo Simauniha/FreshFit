@@ -8,7 +8,7 @@ button{
 
 @media (max-width:640px) {
     a.active{
-        background-color: var(--dark);
-        color: var(--light);
+        background-color: var(--primary-900);
+        color: var(--accent-100);
     }
 }
