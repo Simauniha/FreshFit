@@ -1,9 +1,9 @@
 import React from 'react'
 import "./Home.css";
-import Hero from "../../components/Hero/Hero"
-import LatestCollection from '../../components/LatestCollection/LatestCollection';
-import BestSheller from '../../components/BestSeller/BestSeller';
-import OurPolicy from '../../components/OurPolicy/OurPolicy';
+import Hero from "../../components/Hero"
+import LatestCollection from '../../components/LatestCollection';
+import BestSheller from '../../components/BestSeller';
+import OurPolicy from '../../components/OurPolicy';
 
 const Home = () => {
   return (

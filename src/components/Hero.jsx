@@ -1,6 +1,5 @@
-import "./Hero.css";
 import React from 'react'
-import hero from "../../assets/hero.png";
+import hero from "../assets/hero.png";
 
 const Hero = () => {
     return (
@@ -21,7 +20,7 @@ const Hero = () => {
                     </div>
                 </div>
                 {/* hero right size */}
-                <img src={hero} className="w-full sm:w-1/2 h-175 hero-img" alt="Hero image" />
+                <img src={hero} className="w-full sm:w-1/2 h-175 hero-img bg-(--primary-600)" alt="Hero image" />
                 
             </div>
         </>
