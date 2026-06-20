@@ -1,14 +1,43 @@
 import { ShopContext } from "../../Context/ShopContext";
-import "./Collection.css";
 import { IoIosArrowForward } from "react-icons/io";
-import { IoMdArrowDropdown } from "react-icons/io";
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Tittle from "../../components/Tittle";
+import ProductItem from "../../components/ProductItem";
 
 const Collection = () => {
 
   const { products } = useContext(ShopContext);
   const [showFilter, setShowFilter] = useState(false);
+  const [filterProducts, setFilterProducts] = useState([]);
+  const [category, setCategory] = useState([]);
+  const [subCategory, setSubCategory] = useState([]);
+
+  const toggleCategory = (e) => {
+    if (category.includes(e.target.value)) {
+      setCategory(prev => prev.filter(item => item !== e.target.value))
+    }
+    else {
+      setCategory(prev => [...prev, e.target.value])
+    }
+  }
+
+  const toggleSubCategory = (e) => {
+    if (subCategory.includes(e.target.value)) {
+      setSubCategory(prev => prev.filter(item => item !== e.target.value))
+    }
+    else {
+      setSubCategory(prev => [...prev, e.target.value])
+    }
+  }
+
+  useEffect(() => {
+    setFilterProducts(products)
+  }, [])
+
+  useEffect(() => {
+    console.log(category);
+    console.log(subCategory);
+  }, [category, subCategory])
 
   return (
     <>
@@ -24,15 +53,15 @@ const Collection = () => {
             <p className="mb-3 text-sm font-medium">CATEGORIES</p>
             <div className="flex flex-col gap-2 text-lg font-light text-(--neutral-500)">
               <p className="flex gap-2">
-                <input type="checkbox" className="w-4" value={'Men'} />Men
+                <input type="checkbox" className="w-4" value={'Men'} onChange={toggleCategory} />Men
               </p>
 
               <p className="flex gap-2">
-                <input type="checkbox" className="w-4" value={'Women'} />Women
+                <input type="checkbox" className="w-4" value={'Women'} onChange={toggleCategory} />Women
               </p>
 
               <p className="flex gap-2">
-                <input type="checkbox" className="w-4" value={'Kids'} />Kids
+                <input type="checkbox" className="w-4" value={'Kids'} onChange={toggleCategory} />Kids
               </p>
 
             </div>
@@ -42,19 +71,19 @@ const Collection = () => {
             <p className="mb-3 text-sm font-medium">TYPE</p>
             <div className="flex flex-col gap-2 text-lg font-light text-(--neutral-500)">
               <p className="flex gap-2">
-                <input type="checkbox" className="w-4" value={'Topwear'} />Topwear
+                <input type="checkbox" className="w-4" value={'Topwear'} onChange={toggleSubCategory} />Topwear
               </p>
 
               <p className="flex gap-2">
-                <input type="checkbox" className="w-4" value={'Bottomwear'} />Bottomwear
+                <input type="checkbox" className="w-4" value={'Bottomwear'} onChange={toggleSubCategory} />Bottomwear
               </p>
 
               <p className="flex gap-2">
-                <input type="checkbox" className="w-4" value={'Winterwear'} />Winterwear
+                <input type="checkbox" className="w-4" value={'Winterwear'} onChange={toggleSubCategory} />Winterwear
               </p>
 
               <p className="flex gap-2">
-                <input type="checkbox" className="w-4" value={'Summerwear'} />Summerwear
+                <input type="checkbox" className="w-4" value={'Summerwear'} onChange={toggleSubCategory} />Summerwear
               </p>
 
             </div>
@@ -62,13 +91,22 @@ const Collection = () => {
         </div>
         {/* right side */}
         <div className="flex-1">
+
           <div className="flex justify-between text-xl sm:text-2xl mb-4">
-            <Tittle text1={"ALL"} text2={"COLLECTION"}/>
+            <Tittle text1={"ALL"} text2={"COLLECTION"} />
             <select className="border-2 border-gray-300 text-sm px-2">
               <option value="Relavent">Sort By: Relevant</option>
               <option value="High to Low">Sort By: High to Low</option>
               <option value="Low to High">Sort By: Low to High</option>
             </select>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-6">
+            {
+              filterProducts.map((item, index) => (
+                <ProductItem key={index} name={item.name} id={item._id} price={item.price} image={item.image} />
+              ))
+            }
           </div>
         </div>
       </div>
