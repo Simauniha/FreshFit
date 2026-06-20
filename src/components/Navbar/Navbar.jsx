@@ -1,13 +1,17 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import "./Navbar.css";
 import Logo from "../../assets/logo-name.png"
 import { NavLink, Link } from 'react-router-dom';
 import { FaSearch, FaUser, FaShoppingCart } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoIosArrowDown } from "react-icons/io";
+import { ShopContext } from '../../Context/ShopContext';
 
 const Navbar = () => {
+
     const [visible, setVisible] = useState(false);
+    const {setShowSearch} = useContext(ShopContext);
+
     return (
         <>
             <div className="flex items-center justify-between py-5 font-medium">
@@ -35,7 +39,7 @@ const Navbar = () => {
                 </ul>
 
                 <div className='flex items-center gap-6'>
-                    <button className='w-5 cursor-pointer'><FaSearch className="text-xl" /></button>
+                    <button onClick={() => setShowSearch(true)} className='w-5 cursor-pointer'><FaSearch className="text-xl" /></button>
 
                     <div className='group relative'>
                         <button className='w-5 cursor-pointer'><FaUser className="text-xl" /></button>
