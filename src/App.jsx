@@ -11,7 +11,7 @@ import About from "../src/pages/About/About"
 import PlaceOrder from "../src/pages/PlaceOrder/PlaceOrder"
 
 import Navbar from "../src/components/Navbar/Navbar"
-import Footer from "../src/components/Footer/Footer"
+import Footer from "../src/components/Footer"
 
 const App = () => {
   return (
