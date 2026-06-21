@@ -1,16 +1,33 @@
-# React + Vite
+# FRESH FIT 🛍️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**A modern, minimalist e-commerce web app for fashion collections.**
 
-Currently, two official plugins are available:
+FreshFit is a React-based e-commerce frontend with clean UI/UX, focused on browsing and filtering clothing collections. Built with performance and aesthetics in mind.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Live Demo:** https://freshfit-nine.vercel.app/
 
-## React Compiler
+### **Features**
+- **Product Collections** - Browse all collections with grid layout
+- **Smart Filters** - Filter by Categories & Type with collapsible sidebar
+- **Sort Options** - Sort by Relevant, Low to High, High to Low price
+- **Search Functionality** - Real-time search with clean rounded input
+- **Responsive Design** - Mobile-first, works on all devices
+- **Minimal UI** - Gray/white theme for distraction-free shopping
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### **Tech Stack**
+| Tech | Use |
+| --- | --- |
+| **React 18** | UI Library |
+| **Tailwind CSS** | Styling |
+| **React Router** | Page routing |
+| **Context API** | State management for cart/search |
+| **React Icons** | TfiClose, BsSearch icons |
+| **Vite** | Build tool |
 
-## Expanding the ESLint configuration
+### **Getting Started**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**1. Clone the repo**
+```bash
+git clone https://github.com/your-username/freshfit.git
+cd freshfit
+npm run dev
