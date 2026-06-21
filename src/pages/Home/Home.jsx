@@ -1,5 +1,4 @@
 import React from 'react'
-import "./Home.css";
 import Hero from "../../components/Hero"
 import LatestCollection from '../../components/LatestCollection';
 import BestSheller from '../../components/BestSeller';
