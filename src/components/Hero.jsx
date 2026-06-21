@@ -20,7 +20,9 @@ const Hero = () => {
                     </div>
                 </div>
                 {/* hero right size */}
-                <img src={hero} className="w-full sm:w-1/2 h-175 hero-img bg-(--primary-600)" alt="Hero image" />
+                
+
+               <img src={hero} className="w-full sm:w-1/2 h-100 sm:h-full object-contain sm:object-cover bg-(--primary-600)" alt="Hero image" />
                 
             </div>
         </>
