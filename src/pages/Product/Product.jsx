@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import React, { useContext, useEffect, useState } from 'react'
 import { ShopContext } from "../../Context/ShopContext";
 import { GoStarFill, GoCheck } from "react-icons/go";
+import RelatedProducts from "../../components/RelatedProducts";
 
 const Product = () => {
   const { productId } = useParams();
@@ -161,6 +162,7 @@ const Product = () => {
         </div>
       </div>
       {/* related products */}
+      <RelatedProducts category={productData.category} subCategory={productData.subCategory}/>
     </div>
   ) : <div className="opacity-0"></div>
 }

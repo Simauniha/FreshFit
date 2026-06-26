@@ -1,7 +1,7 @@
 import { ShopContext } from "../../Context/ShopContext";
 import { IoIosArrowForward } from "react-icons/io";
 import React, { useContext, useEffect, useState } from 'react'
-import Tittle from "../../components/Tittle";
+import Title from "../../components/Title";
 import ProductItem from "../../components/ProductItem";
 
 const Collection = () => {
@@ -134,7 +134,7 @@ const Collection = () => {
         <div className="flex-1">
 
           <div className="flex justify-between text-xl sm:text-2xl mb-4">
-            <Tittle text1={"ALL"} text2={"COLLECTION"} />
+            <Title text1={"ALL"} text2={"COLLECTION"} />
             <select onChange={(e) => setSortType(e.target.value)} className="border-2 border-gray-300 text-sm px-2">
               <option value="Relavent">Sort By: Relevant</option>
               <option value="High-Low">Sort By: High to Low</option>
