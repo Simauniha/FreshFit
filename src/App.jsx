@@ -1,5 +1,8 @@
 import React from 'react'
 import { Routes ,Route} from 'react-router-dom'
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
+
 import Home from "../src/pages/Home/Home"
 import Collection from "./pages/Collection/Collection"
 import Product from "../src/pages/Product/Product"
@@ -18,6 +21,7 @@ const App = () => {
   return (
     <>
     <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
+      <ToastContainer/>
       <Navbar/>
       <SearchBar/>
       <Routes>

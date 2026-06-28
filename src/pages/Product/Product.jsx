@@ -6,11 +6,11 @@ import RelatedProducts from "../../components/RelatedProducts";
 
 const Product = () => {
   const { productId } = useParams();
-  const { products, currency } = useContext(ShopContext);
+  const { products, currency, addToCart } = useContext(ShopContext);
   const [productData, setProductData] = useState(null);
   const [image, setImage] = useState('');
   const [size, setSize] = useState('');
-  const [activeTab, setActiveTab] = useState('description'); // ← ye state add kar
+  const [activeTab, setActiveTab] = useState('description');
 
   const fetchProductData = async () => {
     products.map((item) => {
@@ -68,7 +68,7 @@ const Product = () => {
             </div>
           </div>
 
-          <button className="bg-(--primary-900) text-white px-8 py-3 text-lg active:bg-(--primary-800)">ADD TO CART</button>
+          <button onClick={() => addToCart(productData._id, size)} className="bg-(--primary-900) text-white px-8 py-3 text-lg active:bg-(--primary-800)">ADD TO CART</button>
           <hr className="mt-8 sm:w-4/5 text-gray-300" />
           <div className="text-sm text-gray-500 mt-5 flex flex-col gap-4">
             <p className="flex items-center gap-2"><GoCheck /> 100% Original Products</p>
@@ -162,7 +162,7 @@ const Product = () => {
         </div>
       </div>
       {/* related products */}
-      <RelatedProducts category={productData.category} subCategory={productData.subCategory}/>
+      <RelatedProducts category={productData.category} subCategory={productData.subCategory} />
     </div>
   ) : <div className="opacity-0"></div>
 }
