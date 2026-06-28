@@ -10,7 +10,7 @@ import { ShopContext } from '../../Context/ShopContext';
 const Navbar = () => {
 
     const [visible, setVisible] = useState(false);
-    const {setShowSearch} = useContext(ShopContext);
+    const { setShowSearch, getCartCount } = useContext(ShopContext);
 
     return (
         <>
@@ -55,7 +55,7 @@ const Navbar = () => {
 
                     <Link to="/cart" className='relative'>
                         <button className='w-5 min-w-5 cursor-pointer'><FaShoppingCart className="text-xl" /></button>
-                        <p className='absolute -right-1.75 -bottom-0.5 w-4 text-center leading-4 bg-white text-black aspect-square border border-black rounded-full text-[10px] '>10</p>
+                        <p className='absolute -right-1.75 -bottom-0.5 w-4 text-center leading-4 bg-white text-black aspect-square border border-black rounded-full text-[10px] '>{getCartCount()}</p>
                     </Link>
                     <button onClick={() => setVisible(true)} className='w-5 cursor-pointer sm:hidden'><RxHamburgerMenu className='text-2xl' /></button>
                 </div>
