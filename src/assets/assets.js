@@ -53,12 +53,13 @@ import p_img49 from './p_img49.png'
 import p_img50 from './p_img50.png'
 import p_img51 from './p_img51.png'
 import p_img52 from './p_img52.png'
+import p_img53_1 from './p_img53_1.jpeg'
 
 export const products = [
     {
         _id: "aaaaa",
         name: "Women Round Neck Cotton Top",
-        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        description: "Crafted from soft premium cotton, this round neck top offers exceptional comfort and a flattering fit. Lightweight and breathable, it's perfect for everyday wear, casual outings, or weekend get-togethers.",
         price: 100,
         image: [p_img1],
         category: "Women",
@@ -70,7 +71,7 @@ export const products = [
     {
         _id: "aaaab",
         name: "Men Round Neck Pure Cotton T-shirt",
-        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        description: "Made from 100% pure cotton, this classic T-shirt delivers superior comfort with a breathable fabric and regular fit. A versatile wardrobe essential that pairs effortlessly with jeans, joggers, or shorts.",
         price: 200,
         image: [p_img2_1,p_img2_2,p_img2_3,p_img2_4],
         category: "Men",
@@ -82,7 +83,7 @@ export const products = [
     {
         _id: "aaaac",
         name: "Girls Round Neck Cotton Top",
-        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        description: "Designed with soft, skin-friendly cotton, this stylish top keeps your little one comfortable all day long. Perfect for school, family outings, and everyday adventures.",
         price: 220,
         image: [p_img3],
         category: "Kids",
@@ -94,7 +95,7 @@ export const products = [
     {
         _id: "aaaad",
         name: "Men Round Neck Pure Cotton T-shirt",
-        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        description: "Enjoy all-day comfort with this premium cotton T-shirt featuring a modern fit and durable stitching. Ideal for casual wear while keeping your style simple and timeless.",
         price: 110,
         image: [p_img4],
         category: "Men",
@@ -106,7 +107,7 @@ export const products = [
     {
         _id: "aaaae",
         name: "Women Round Neck Cotton Top",
-        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        description: "A perfect combination of elegance and comfort, this cotton top features a breathable fabric and flattering silhouette. Easy to style with jeans, trousers, or skirts for any occasion.",
         price: 130,
         image: [p_img5],
         category: "Women",
@@ -118,7 +119,7 @@ export const products = [
     {
         _id: "aaaaf",
         name: "Girls Round Neck Cotton Top",
-        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        description: "A perfect combination of elegance and comfort, this cotton top features a breathable fabric and flattering silhouette. Easy to style with jeans, trousers, or skirts for any occasion.",
         price: 140,
         image: [p_img6],
         category: "Kids",
@@ -130,7 +131,7 @@ export const products = [
     {
         _id: "aaaag",
         name: "Men Tapered Fit Flat-Front Trousers",
-        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        description: "Tailored for a sleek and modern look, these tapered trousers provide excellent comfort and flexibility. Suitable for office wear, casual outings, or everyday styling.",
         price: 190,
         image: [p_img7],
         category: "Men",
@@ -142,7 +143,7 @@ export const products = [
     {
         _id: "aaaah",
         name: "Men Round Neck Pure Cotton T-shirt",
-        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        description: "Upgrade your basics with this soft cotton T-shirt featuring breathable fabric and a comfortable regular fit. Designed to keep you stylish throughout the day.",
         price: 140,
         image: [p_img8],
         category: "Men",
@@ -154,7 +155,7 @@ export const products = [
     {
         _id: "aaaai",
         name: "Girls Round Neck Cotton Top",
-        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        description: "This adorable cotton top offers softness, comfort, and a relaxed fit for everyday wear. Crafted to keep kids comfortable while adding a touch of playful style.",
         price: 100,
         image: [p_img9],
         category: "Kids",
@@ -166,7 +167,7 @@ export const products = [
     {
         _id: "aaaaj",
         name: "Men Tapered Fit Flat-Front Trousers",
-        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        description: "Designed with premium quality fabric, these flat-front trousers combine comfort with a polished appearance. Perfect for work, travel, or casual occasions.",
         price: 110,
         image: [p_img10],
         category: "Men",
@@ -178,7 +179,7 @@ export const products = [
     {
         _id: "aaaak",
         name: "Men Round Neck Pure Cotton T-shirt",
-        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        description: "Featuring breathable cotton fabric and a clean, minimalist design, this T-shirt delivers everyday comfort while maintaining a smart casual look.",
         price: 120,
         image: [p_img11],
         category: "Men",
@@ -190,7 +191,7 @@ export const products = [
     {
         _id: "aaaal",
         name: "Men Round Neck Pure Cotton T-shirt",
-        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        description: "Experience premium comfort with this soft cotton T-shirt crafted for daily wear. Its durable stitching and relaxed fit make it a dependable wardrobe staple.",
         price: 150,
         image: [p_img12],
         category: "Men",
@@ -202,7 +203,7 @@ export const products = [
     {
         _id: "aaaam",
         name: "Women Round Neck Cotton Top",
-        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        description: "Designed to keep you comfortable throughout the day, this cotton top features a breathable fabric and elegant fit. Perfect for work, shopping, or casual outings.",
         price: 130,
         image: [p_img13],
         category: "Women",
@@ -214,7 +215,7 @@ export const products = [
     {
         _id: "aaaan",
         name: "Boy Round Neck Pure Cotton T-shirt",
-        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        description: "Crafted from gentle cotton fabric, this T-shirt keeps boys comfortable while allowing free movement during playtime, school, and outdoor activities.",
         price: 160,
         image: [p_img14],
         category: "Kids",
@@ -226,7 +227,7 @@ export const products = [
     {
         _id: "aaaao",
         name: "Men Tapered Fit Flat-Front Trousers",
-        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        description: "These stylish trousers offer a tailored fit with soft, durable fabric for all-day comfort. A versatile choice for both formal and casual wardrobes.",
         price: 140,
         image: [p_img15],
         category: "Men",
@@ -238,7 +239,7 @@ export const products = [
     {
         _id: "aaaap",
         name: "Girls Round Neck Cotton Top",
-        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        description: "Made from premium cotton, this comfortable top offers excellent breathability and a soft touch. Its versatile design makes it suitable for every season.",
         price: 170,
         image: [p_img16],
         category: "Kids",
@@ -250,7 +251,7 @@ export const products = [
     {
         _id: "aaaaq",
         name: "Men Tapered Fit Flat-Front Trousers",
-        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        description: "Upgrade your everyday wardrobe with these modern tapered trousers featuring a comfortable fit, durable fabric, and clean finishing for a refined appearance.",
         price: 150,
         image: [p_img17],
         category: "Men",
@@ -262,7 +263,7 @@ export const products = [
     {
         _id: "aaaar",
         name: "Boy Round Neck Pure Cotton T-shirt",
-        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        description: "Built for active kids, this cotton T-shirt combines softness, durability, and comfort. The breathable material keeps your child cool and comfortable all day.",
         price: 180,
         image: [p_img18],
         category: "Kids",
@@ -676,6 +677,18 @@ export const products = [
         subCategory: "Winterwear",
         sizes: ["S", "M", "L", "XL"],
         date: 1716668445448,
+        bestseller: false
+    },
+    {
+        _id: "aaaca",
+        name: "Women A-Shaped Short Kurti",
+        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
+        price: 250,
+        image: [p_img53_1],
+        category: "Women",
+        subCategory: "Summerwear",
+        sizes: ["S", "M", "L", "XL"],
+        date: 1716668445449,
         bestseller: false
     }
 
