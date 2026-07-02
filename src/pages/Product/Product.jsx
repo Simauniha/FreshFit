@@ -36,7 +36,7 @@ const Product = () => {
                 onClick={() => setImage(item)}
                 src={item}
                 key={index}
-                className="w-[24%] sm:w-full sm:mb-3 shrink-0 aspect-4/4 object-cover cursor-pointer"
+                className="w-20 sm:w-full shrink-0 aspect-square object-cover rounded border cursor-pointer"
                 alt="product images"
               />
             ))}
