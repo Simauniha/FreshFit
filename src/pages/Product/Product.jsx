@@ -29,8 +29,8 @@ const Product = () => {
   return productData ? (
     <div className="border-t-2 pt-10 transition-opacity ease-in duration-500 opacity-100">
       <div className="flex gap-12 sm:gap-12 flex-col sm:flex-row">
-        <div className="flex-1 flex items-start gap-3 sm:flex-row">
-          <div className="flex sm:flex-col overflow-x-auto justify-between sm:justify-normal sm:w-[19%] w-full">
+        <div className="flex-1 flex flex-col sm:flex-row gap-4">
+          <div className="order-2 sm:order-1 flex sm:flex-col gap-2 overflow-x-auto sm:w-[18%] w-full">
             {productData.image.map((item, index) => (
               <img
                 onClick={() => setImage(item)}
@@ -41,8 +41,12 @@ const Product = () => {
               />
             ))}
           </div>
-          <div className="w-full sm:w-[70%]">
-            <img src={image} className="w-full h-auto" alt="main product" />
+          <div className="order-1 sm:order-2 w-full sm:w-[80%]">
+            <img
+              src={image}
+              className="w-full aspect-square object-cover rounded-lg"
+              alt="main product image"
+            />
           </div>
         </div>
 
