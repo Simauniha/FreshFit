@@ -1,8 +1,6 @@
 # Fresh Fit
 
-> A modern, responsive e-commerce product page built with React.js & Tailwind CSS.
-
-Fresh Fit is a clean and scalable frontend project designed to showcase products with an intuitive user experience. It includes dynamic product rendering, interactive UI components, and a responsive layout optimized for all devices.
+>Fresh Fit is a fully responsive fashion e-commerce frontend designed to provide a clean and intuitive shopping experience. The application features dynamic product browsing, detailed product pages, cart management, filtering, sorting, and responsive layouts. It demonstrates modern frontend development practices using reusable React components and Context API for state management.
 
 ---
 
@@ -10,69 +8,157 @@ Fresh Fit is a clean and scalable frontend project designed to showcase products
 
 https://freshfit-nine.vercel.app/
 
-## Features
+---
 
-* **Product Gallery**
-  Interactive image gallery with thumbnail switching
+## Preview
 
-* **Dynamic Product Data**
-  Displays product name, price, rating, and description
+![alt text](image-4.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
 
-* **Size Selection**
-  Select product sizes with active state UI
-
-* **Trust Badges**
-
-  * 100% Original Products
-  * Cash on Delivery Available
-  * Easy Return Policy
-
-* **Tabbed Interface**
-  Toggle between Description & Customer Reviews
-
-* **Fully Responsive**
-  Mobile-first design using Tailwind CSS
-
-* **Modern UI/UX**
-  Smooth transitions and clean layout
+- Home Page
+- Collection Page
+- Product Details
+- Shopping Cart
 
 ---
 
-## Tech Stack
+# Features
 
-| Category         | Technology       |
-| ---------------- | ---------------- |
-| Frontend         | React.js         |
-| Routing          | React Router DOM |
-| Styling          | Tailwind CSS     |
-| Icons            | React Icons      |
-| State Management | Context API      |
-| Build Tool       | Vite             |
+## Home Page
+
+- Responsive landing page
+- Hero section
+- Latest Collection
+- Best Sellers
+- Newsletter subscription
+- Company policy section
 
 ---
 
-## Installation & Setup
+## Product Collection
 
-### 1 Clone the repository
+- Browse all products
+- Category filtering
+- Subcategory filtering
+- Sort products by:
+  - Relevant
+  - Price: Low to High
+  - Price: High to Low
+- Responsive product grid
+
+---
+
+## Product Details
+
+- Dynamic routing with React Router
+- Product image gallery
+- Thumbnail image switching
+- Product description
+- Customer ratings
+- Size selection
+- Add to Cart functionality
+- Related products
+
+---
+
+## Shopping Cart
+
+- Add products to cart
+- Quantity management
+- Size-specific cart items
+- Remove products
+- Automatic subtotal calculation
+- Shipping fee calculation
+- Total price calculation
+- Cart summary section
+
+---
+
+## Additional Pages
+
+- About
+- Contact
+- Place Order
+
+---
+
+## User Experience
+
+- Fully responsive design
+- Clean and modern interface
+- Reusable React components
+- Smooth hover transitions
+- Mobile-first layout
+- Consistent typography
+- Optimized spacing
+
+---
+
+# Tech Stack
+
+| Category | Technology |
+|----------|------------|
+| Frontend | React.js |
+| Build Tool | Vite |
+| Styling | Tailwind CSS |
+| Routing | React Router DOM |
+| State Management | Context API |
+| Icons | React Icons |
+| Deployment | Vercel |
+
+---
+
+# Folder Structure
+
+```text
+FreshFit/
+│
+├── public/
+│
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── Context/
+│   ├── pages/
+│   ├── App.jsx
+│   ├── main.jsx
+│
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+---
+
+# Installation
+
+Clone the repository
 
 ```bash
 git clone https://github.com/Simauniha/fresh-fit.git
+```
+
+Navigate to the project folder
+
+```bash
 cd fresh-fit
 ```
 
-### 2 Install dependencies
+Install dependencies
 
 ```bash
 npm install
 ```
 
-### 3 Run development server
+Run the development server
 
 ```bash
 npm run dev
 ```
 
-### 4 Open in browser
+Open your browser
 
 ```
 http://localhost:5173
@@ -80,77 +166,84 @@ http://localhost:5173
 
 ---
 
-## Project Structure
+# Core Concepts Used
 
+- React Functional Components
+- React Hooks
+- useState
+- useEffect
+- useContext
+- React Router DOM
+- Dynamic Routing
+- Context API
+- Conditional Rendering
+- Component Reusability
+- Responsive Design
+- Tailwind CSS Utility Classes
+
+---
+
+# Responsive Design
+
+The application is optimized for:
+
+- Mobile
+- Tablet
+- Laptop
+- Desktop
+
+---
+
+# Future Improvements
+
+- Wishlist functionality
+- User authentication
+- User profile
+- Payment gateway integration
+- Order history
+- Product search
+- Customer reviews
+- Dark mode
+
+---
+
+# Contributing
+
+Contributions are welcome.
+
+1. Fork the repository.
+2. Create a feature branch.
+
+```bash
+git checkout -b feature/your-feature
 ```
-fresh-fit/
-├── public/
-├── src/
-│   ├── Components/
-│   │   └── Product/
-│   │       └── Product.jsx
-│   ├── Context/
-│   │   └── ShopContext.jsx
-│   ├── App.jsx
-│   └── main.jsx
-├── index.html
-├── package.json
-└── README.md
+
+3. Commit your changes.
+
+```bash
+git commit -m "Add your feature"
 ```
 
----
+4. Push to your branch.
 
-## Key Components
+```bash
+git push origin feature/your-feature
+```
 
-### Product.jsx
-
-Handles:
-
-* Fetching product data via `useParams`
-* Context integration using `ShopContext`
-* Image gallery logic
-* Size selection state
-* Tabs for description & reviews
+5. Open a Pull Request.
 
 ---
 
-### ShopContext.jsx
-
-Provides global state:
-
-* `products` array
-* `currency` symbol
-
----
-
-## Contributing
-
-Contributions are welcome!
-
-1. Fork the repository
-2. Create a new branch
-
-   ```bash
-   git checkout -b feature/your-feature
-   ```
-3. Commit your changes
-
-   ```bash
-   git commit -m "Add your feature"
-   ```
-4. Push to GitHub
-
-   ```bash
-   git push origin feature/your-feature
-   ```
-5. Open a Pull Request
-
----
-
-## Author
+# Author
 
 **Simauniha**
-🔗 GitHub: https://github.com/Simauniha
-🔗 LinkedIn: https://www.linkedin.com/in/omisha-simauniha-39b000361
+
+GitHub
+
+https://github.com/Simauniha
+
+LinkedIn
+
+https://www.linkedin.com/in/omisha-simauniha-39b000361
 
 ---
