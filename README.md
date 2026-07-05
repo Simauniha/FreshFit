@@ -1,6 +1,6 @@
 # Fresh Fit
 
->Fresh Fit is a fully responsive fashion e-commerce frontend designed to provide a clean and intuitive shopping experience. The application features dynamic product browsing, detailed product pages, cart management, filtering, sorting, and responsive layouts. It demonstrates modern frontend development practices using reusable React components and Context API for state management.
+Fresh Fit is a fully responsive fashion e-commerce frontend designed to provide a clean and intuitive shopping experience. The application features dynamic product browsing, detailed product pages, cart management, filtering, sorting, and responsive layouts. It demonstrates modern frontend development practices using reusable React components and Context API for state management.
 
 ---
 
@@ -12,15 +12,17 @@ https://freshfit-nine.vercel.app/
 
 ## Preview
 
-![alt text](image-4.png)
-![alt text](image-1.png)
-![alt text](image-2.png)
-![alt text](image-3.png)
-
 - Home Page
+![alt text](image-4.png)
+
 - Collection Page
+![alt text](image-1.png)
+
 - Product Details
+![alt text](image-2.png)
+
 - Shopping Cart
+![alt text](image-3.png)
 
 ---
 
@@ -238,12 +240,8 @@ git push origin feature/your-feature
 
 **Simauniha**
 
-GitHub
+* GitHub https://github.com/Simauniha
 
-https://github.com/Simauniha
-
-LinkedIn
-
-https://www.linkedin.com/in/omisha-simauniha-39b000361
+* LinkedIn https://www.linkedin.com/in/omisha-simauniha-39b000361
 
 ---
