@@ -10,7 +10,26 @@ const Orders = () => {
       <div className="text-3xl">
         <Title text1={"MY"} text2={"ORDERS"}/>
       </div>
-
+      <div>
+        {
+          products.slice(1,4).map((item,index)=>(
+            <div key={index} className="py-4 border-t text-gray-700 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+              <div className="flex items-start gap-6 text-sm">
+                <img src={item.image[0]} className='w-16 sm:w-20' alt="product image" />
+                <div className="">
+                  <p className="font-medium sm:text-base">{item.name}</p>
+                  <div className="flex items-start gap-3 mt-2 text-base text-gray-700">
+                    <p className="text-lg">{currency}{item.price}</p>
+                    <p className="">quantity:1</p>
+                    <p className="">size:m</p>
+                  </div>
+                  <p className='mt-2'>Date: <span className="text-gray-400">14 JUL 2026</span></p>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
 
     </div>
     </>
