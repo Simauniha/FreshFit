@@ -42,7 +42,10 @@ const Navbar = () => {
                     <button onClick={() => setShowSearch(true)} className='w-5 cursor-pointer'><FaSearch className="text-xl" /></button>
 
                     <div className='group relative'>
-                        <button className='w-5 cursor-pointer'><FaUser className="text-xl" /></button>
+
+                        <Link to="/login" className="w-5 cursor-pointer">
+                            <FaUser className="text-xl" />
+                        </Link>
 
                         <div className='group-hover:block hidden absolute dropdown-menu right-0 pt-4'>
                             <div className="flex flex-col gap-2 w-36 py-5 bg-slate-100 text-(--neutral-200) rounded shadow-lg">

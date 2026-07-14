@@ -1,46 +1,74 @@
-import React, { useContext } from 'react'
-import Title from "../../components/Title"
-import {ShopContext} from "../../Context/ShopContext"
+import React, { useContext } from "react";
+import Title from "../../components/Title";
+import { ShopContext } from "../../Context/ShopContext";
 
 const Orders = () => {
-  const{currency,products}=useContext(ShopContext);
+  const { currency, products } = useContext(ShopContext);
+
   return (
-    <>
-    <div className="border-t pt-16">
-      <div className="text-3xl">
-        <Title text1={"MY"} text2={"ORDERS"}/>
+    <div className="border-t pt-16 min-h-screen">
+      <div className="text-3xl mb-8">
+        <Title text1={"MY"} text2={"ORDERS"} />
       </div>
+
       <div>
-        {
-          products.slice(1,4).map((item,index)=>(
-            <div key={index} className="py-4 border-t text-gray-700 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-              <div className="flex items-start gap-6 text-sm">
-                <img src={item.image[0]} className='w-16 sm:w-20' alt="product image" />
-                <div className="">
-                  <p className="font-medium sm:text-base">{item.name}</p>
-                  <div className="flex items-start gap-3 mt-2 text-base text-gray-700">
-                    <p className="text-lg">{currency}{item.price}</p>
-                    <p className="">quantity:1</p>
-                    <p className="">size:m</p>
-                  </div>
-                  <p className='mt-2'>Date: <span className="text-gray-400">14 JUL 2026</span></p>
+        {products.slice(1, 4).map((item, index) => (
+          <div
+            key={index}
+            className="grid grid-cols-1 md:grid-cols-[3fr_1fr_auto] items-center gap-6 py-6 border-b border-gray-300"
+          >
+            {/* Product Details */}
+            <div className="flex items-center gap-5">
+              <img
+                src={item.image[0]}
+                alt={item.name}
+                className="w-20 h-20 object-cover rounded"
+              />
+
+              <div>
+                <p className="text-lg font-semibold text-gray-800">
+                  {item.name}
+                </p>
+
+                <div className="flex flex-wrap items-center gap-4 mt-2 text-sm text-gray-700">
+                  <p className="text-lg font-semibold">
+                    {currency}
+                    {item.price}
+                  </p>
+
+                  <p>Quantity: 1</p>
+
+                  <p>
+                    Size: <span className="uppercase">M</span>
+                  </p>
                 </div>
+
+                <p className="mt-2 text-sm text-gray-500">
+                  Date: 14 JUL 2026
+                </p>
               </div>
-              <div className="flex justify-between">
-                <div className="flex items-center gap-2">
-                  <p className="min-w-2 h-2 rounded-full bg-green-600"></p>
-                  <p className="text-sm md:text-base">Ready to Ship</p>
-                </div>
-              </div>
-              <button className="border px-4 py-2 text-sm font-medium">Track Your Order</button>
             </div>
-          ))
-        }
+
+            {/* Order Status */}
+            <div className="flex items-center gap-2">
+              <span className="w-3 h-3 rounded-full bg-green-500"></span>
+
+              <p className="font-medium text-gray-700">
+                Ready to Ship
+              </p>
+            </div>
+
+            {/* Button */}
+            <div className="md:justify-self-end">
+              <button className="border border-gray-400 px-6 py-2 rounded hover:bg-black hover:text-white transition duration-300">
+                Track Your Order
+              </button>
+            </div>
+          </div>
+        ))}
       </div>
-
     </div>
-    </>
-  )
-}
+  );
+};
 
-export default Orders
+export default Orders;
