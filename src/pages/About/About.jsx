@@ -13,25 +13,32 @@ const About = () => {
     <div>
 
       {/* About Title */}
-      <div className="text-4xl text-center pt-8 border-t">
-        <Title text1={"ABOUT"} text2={"US"} />
+      <div className="text-center border-t pt-8">
+        <div className="text-4xl">
+          <Title text1={"ABOUT"} text2={"US"} />
+        </div>
+
+        <p className="mt-4 max-w-2xl mx-auto text-(--neutral-300) leading-7">
+          Crafting timeless fashion with comfort, quality, and confidence at
+          the heart of everything we create.
+        </p>
       </div>
 
       {/* About Content */}
-      <div className="my-12 flex flex-col md:flex-row gap-12">
+      <div className="my-16 flex flex-col md:flex-row gap-16">
 
         <img
-          className="w-full md:max-w-112.5"
+          className="w-full md:max-w-112.5 rounded-2xl shadow-lg"
           src={aboutImg}
           alt="About Fresh Fit"
         />
 
-        <div className="flex flex-col justify-center gap-6 md:w-2/4 text-gray-600">
+        <div className="flex flex-col justify-center gap-6 md:w-2/4 text-(--neutral-300)">
 
           <p>
             Fresh Fit was created with a passion for modern fashion and a
             commitment to providing premium-quality clothing at affordable
-            prices. Our journey started with a simple vision: to make shopping
+            prices. Our journey started with a simple vision—to make shopping
             easy, enjoyable, and accessible for everyone.
           </p>
 
@@ -42,9 +49,9 @@ const About = () => {
             Fresh Fit offers styles that help you look confident every day.
           </p>
 
-          <b className="text-gray-800 text-lg">
+          <h3 className="text-2xl font-semibold text-(--primary-900)">
             Our Mission
-          </b>
+          </h3>
 
           <p>
             Our mission is to inspire confidence through fashion by offering
@@ -58,8 +65,15 @@ const About = () => {
       </div>
 
       {/* Why Choose Us */}
-      <div className="text-3xl text-center py-10">
-        <Title text1={"WHY"} text2={"CHOOSE US"} />
+      <div className="text-center py-10">
+        <div className="text-3xl">
+          <Title text1={"WHY"} text2={"CHOOSE US"} />
+        </div>
+
+        <p className="mt-4 max-w-xl mx-auto text-(--neutral-300)">
+          We're committed to delivering quality, convenience, and exceptional
+          customer service every step of the way.
+        </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
@@ -67,7 +81,7 @@ const About = () => {
         {/* Card 1 */}
         <div className="group rounded-2xl border border-(--accent-100) bg-white p-8 transition-all duration-300 hover:-translate-y-2 hover:border-(--primary-700) hover:shadow-xl">
 
-          <div className="w-14 h-14 rounded-xl bg-(--primary-900) text-white flex items-center justify-center mb-6 transition-colors duration-300">
+          <div className="w-14 h-14 rounded-xl bg-(--primary-900) text-white flex items-center justify-center mb-6 transition-all duration-300 group-hover:bg-(--primary-700) group-hover:scale-110">
             <FiShield size={28} />
           </div>
 
@@ -76,9 +90,9 @@ const About = () => {
           </h3>
 
           <p className="text-(--neutral-300) leading-7">
-            Every product is carefully inspected before reaching you. We focus on
-            premium materials, long-lasting comfort, and excellent craftsmanship to
-            ensure complete customer satisfaction.
+            Every product is carefully inspected before reaching you. We focus
+            on premium materials, long-lasting comfort, and excellent
+            craftsmanship to ensure complete customer satisfaction.
           </p>
 
         </div>
@@ -86,7 +100,7 @@ const About = () => {
         {/* Card 2 */}
         <div className="group rounded-2xl border border-(--accent-100) bg-white p-8 transition-all duration-300 hover:-translate-y-2 hover:border-(--primary-700) hover:shadow-xl">
 
-          <div className="w-14 h-14 rounded-xl bg-(--primary-900) text-white flex items-center justify-center mb-6 transition-colors duration-300">
+          <div className="w-14 h-14 rounded-xl bg-(--primary-900) text-white flex items-center justify-center mb-6 transition-all duration-300 group-hover:bg-(--primary-700) group-hover:scale-110">
             <FiShoppingBag size={28} />
           </div>
 
@@ -105,7 +119,7 @@ const About = () => {
         {/* Card 3 */}
         <div className="group rounded-2xl border border-(--accent-100) bg-white p-8 transition-all duration-300 hover:-translate-y-2 hover:border-(--primary-700) hover:shadow-xl">
 
-          <div className="w-14 h-14 rounded-xl bg-(--primary-900) text-white flex items-center justify-center mb-6 transition-colors duration-300">
+          <div className="w-14 h-14 rounded-xl bg-(--primary-900) text-white flex items-center justify-center mb-6 transition-all duration-300 group-hover:bg-(--primary-700) group-hover:scale-110">
             <FiHeadphones size={28} />
           </div>
 
@@ -114,17 +128,17 @@ const About = () => {
           </h3>
 
           <p className="text-(--neutral-300) leading-7">
-            Our dedicated support team is always ready to help with your questions,
-            orders, and returns, ensuring a smooth experience from purchase to
-            delivery.
+            Our dedicated support team is always ready to help with your
+            questions, orders, and returns, ensuring a smooth experience from
+            purchase to delivery.
           </p>
 
         </div>
 
       </div>
 
-
       <NewsletterBox />
+
     </div>
   );
 };
