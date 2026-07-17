@@ -10,8 +10,9 @@ const Login = () => {
     <>
       <form action="" onSubmit={onSubmitHandler} className='flex flex-col items-center w-[90%] sm:max-w-96 m-auto mt-18 gap-4 text-gray-800'>
 
-        <div className="inline-flex items-center gap-2 mb-2 mt-10 text-5xl">
-          <Title className="prata-regular" text2={currentState} />
+        <div className="inline-flex items-center gap-2 mb-2 mt-10 fontset">
+          <p className="prata-regular text-3xl leading-relaxed text-(--primary-900)">{currentState}</p>
+          <p className="w-8 md:w-11 h-0.5 bg-(--primary-600)"></p>
         </div>
 
         {currentState === 'Login' ? '' : <input type="text" className="w-full px-3 py-2 border border-gray-800" placeholder='Name' required />}
